@@ -1,0 +1,125 @@
+/* основний колір  #212121 */
+/* другорядний колір  #757575 */
+/* фон для шапки та футера #2F303A */
+:root{
+    --primary-color:#212121;
+    --secondary-color:#757575;
+    --background-color-header-and-footer:#2F303A;
+    --blue-color:#2196F3;
+    --white-color:#FFFFFF;
+}
+
+body{
+    color:var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.list{
+    list-style: none;
+}
+
+.logo {
+    color:var(--primary-color) ;
+}
+
+.logo-title{
+    color:var(--blue-color);
+}
+
+.logo.logo:hover,
+.logo.logo:focus {
+    color:var(--blue-color);
+}
+
+.main-nav .link{
+    color:var(--primary-color);
+}
+
+.main-nav .link:hover,
+.main-nav .link:focus {
+    color:var(--blue-color);
+}
+
+.auth-nav .link{
+    color: var(--secondary-color);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--blue-color);
+}
+
+.main-section {
+    background-color: var(--background-color-header-and-footer);
+}
+
+.main-section .title {
+    color: var(--white-color);
+}
+.main-button {
+    color: var(--white-color);
+    background-color:var(--blue-color) ;
+}
+
+.features-text {
+    color: var(--secondary-color);
+}
+
+.team .position {
+    color: var(--secondary-color);
+}
+/* footer */
+.footer{
+    background-color: var(--background-color-header-and-footer);
+}
+
+.logo-footer {
+    color: var(--white-color);
+}
+
+.logo-footer.logo-footer:hover,
+.logo-footer.logo-footer:focus {
+    color: var(--blue-color);
+}
+
+.adress-footer {
+    color: var(--white-color);
+}
+
+.adress-footer.adress-footer:hover,
+.adress-footer.adress-footer:focus {
+    color: var(--blue-color);
+}
+
+.link-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.link-footer.link-footer:hover,
+.link-footer.link-footer:focus{
+    color: var(--blue-color);
+}
+
+/* ПОРТФОЛІО */
+
+.body-portfolio {
+    background-color: rgba(236, 236, 236, 1);
+}
+
+.button-portfolio {
+    color: var(--primary-color);
+}
+
+.button-portfolio.button-portfolio:hover,
+.button-portfolio.button-portfolio:focus {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+.title-portfolio {
+    color: var(--primary-color);
+}
+
+.text-portfolio {
+    color: var(--secondary-color);
+}
