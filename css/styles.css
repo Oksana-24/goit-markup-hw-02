@@ -12,17 +12,34 @@
 body{
     color:var(--primary-color);
     background-color: var(--white-color);
-    font-family:'Roboto', monospace;
+    font-family:'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
 
 .list{
     list-style: none;
 }
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+button {
+cursor: pointer;
+}
 /* header */
 .logo {
     color:var(--primary-color) ;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -94,8 +111,19 @@ color: var(--blue-color);
     text-align: center;
     letter-spacing: 0.06em;
     font-family: inherit;
+
 }
 
+.main-button.main-button:hover,
+.main-button.main-button:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+/* Секція без заголовку */
+.features, .activity {
+    background-color:#F5F5F5;
+}
 .features-title {
     font-weight: 700;
     font-size: 14px;
@@ -117,6 +145,10 @@ color: var(--blue-color);
     text-align: center;
 }
 
+/* Наша команда */
+.team {
+   background-color: #F5F4FA;
+}
 .team-heading {
     font-weight: 700;
     font-size: 36px;
@@ -138,18 +170,23 @@ color: var(--blue-color);
     text-align: center;
 }
 
+.list-team-list {
+    background-color: var(--white-color);
+}
+
 
 /* footer */
 .footer{
     background-color: var(--background-color-header-and-footer);
 }
 
-.footer, .logo-footer {
+.logo-footer {
     color: var(--white-color);
-    font-family: 'Raleway';
+    font-family: 'Raleway',sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    text-decoration: none;
 }
 
 .logo-footer.logo-footer:hover,
@@ -162,6 +199,8 @@ color: var(--blue-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    text-decoration: none;
+    font-style: normal;
 }
 
 .adress-footer.adress-footer:hover,
@@ -174,6 +213,8 @@ color: var(--blue-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    text-decoration: none;
+    font-style: normal;
 }
 
 .link-footer.link-footer:hover,
@@ -183,9 +224,7 @@ color: var(--blue-color);
 
 /* ПОРТФОЛІО */
 
-.body-portfolio {
-    background-color: rgba(236, 236, 236, 1);
-}
+
 
 .button-portfolio {
     color: var(--primary-color);
@@ -212,8 +251,7 @@ color: var(--blue-color);
 
 .text-portfolio {
     color: var(--secondary-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
 }
